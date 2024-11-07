@@ -74,6 +74,7 @@ function filter(data) {
   })
 }
 
+const addTicketForm = document.querySelector('.addTicket-form');
 const addTicketBtn = document.querySelector('.addTicket-btn');
 const addTicketName = document.querySelector('#ticketName');
 const addTicketImgUrl = document.querySelector('#ticketImgUrl');
@@ -100,6 +101,7 @@ function addTicket(data) {
       // console.log(data);
       renderData(data);
       areaFilter.value = '全部地區';
+      addTicketForm.reset();
     } else {
       return;
     }
