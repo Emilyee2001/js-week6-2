@@ -7,6 +7,8 @@ axios.get(travelDataUrl)
     renderData(travelData);
     filter(travelData);
     addTicket(travelData);
+  }).catch(function (error) {
+    console.log(error.message)
   })
 
 const ticketCardArea = document.querySelector('.ticketCard-area');
